@@ -9,6 +9,7 @@ from dash import html
 from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 def setup_sensormm(url):
     df = pd.read_csv(url)
