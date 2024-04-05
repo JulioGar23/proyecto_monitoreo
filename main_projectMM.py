@@ -56,6 +56,7 @@ data_combined_mm.dropna(inplace=True)
 #print(len(data_combined_mm))
 
 app = dash.Dash()
+server = app.server
 
 font_style = {'fontFamily': 'Segoe UI, Arial, sans-serif'}
 
