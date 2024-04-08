@@ -17,16 +17,16 @@ def setup_sensormm(url):
     df.rename(columns={'field2': 'Metano', 'field3': 'Monóxido'}, inplace=True)
     return df
 
-sensormm_8_12_Feb = "8_12_Feb24.csv"
-sensormm_12_16_Feb = "12_16_Feb24.csv"
-sensormm_16_20_Feb = "16_20_Feb24.csv"
-sensormm_20_24_Feb = "20_24_Feb24.csv"
-sensormm_24_28_Feb = "24_28_Feb24.csv"
-sensormm_28_2_Mar = "28_2_Mar24.csv"
-sensormm_2_6_Mar = "2_6_Mar24.csv"
-sensormm_6_10_Mar = "6_10_Mar24.csv"
-sensormm_10_14_Mar = "10_14_Mar24.csv"
-sensormm_14_18_Mar = "14_18_Mar24.csv"
+sensormm_8_12_Feb = "Datasetmm\8_12_Feb24.csv"
+sensormm_12_16_Feb = "Datasetmm\12_16_Feb24.csv"
+sensormm_16_20_Feb = "Datasetmm\16_20_Feb24.csv"
+sensormm_20_24_Feb = "Datasetmm\20_24_Feb24.csv"
+sensormm_24_28_Feb = "Datasetmm\24_28_Feb24.csv"
+sensormm_28_2_Mar = "Datasetmm\28_2_Mar24.csv"
+sensormm_2_6_Mar = "Datasetmm\2_6_Mar24.csv"
+sensormm_6_10_Mar = "Datasetmm\6_10_Mar24.csv"
+sensormm_10_14_Mar = "Datasetmm\10_14_Mar24.csv"
+sensormm_14_18_Mar = "Datasetmm\14_18_Mar24.csv"
 
 datamm_1 = setup_sensormm(sensormm_8_12_Feb)
 datamm_2 = setup_sensormm(sensormm_12_16_Feb)
