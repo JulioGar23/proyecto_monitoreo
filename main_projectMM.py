@@ -64,7 +64,7 @@ app.layout = html.Div([
      html.Div([
           html.Img(src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-TecNM-2017.png',
                  style={'height': '200px', 'width': '300px', 'verticalAlign': 'middle', 'marginRight': '30px'}),
-          html.H1(children='Visualización de variables para SIMAR (simar)', style=font_style),
+          html.H1(children='Visualización de variables para SIMAR', style=font_style),
           ], style={'display': 'flex', 'alignItems': 'center','marginBottom': '20px'}),
           html.P(children='Instituto Tecnológico de Ciudad Guzmán'),
      
