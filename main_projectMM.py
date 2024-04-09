@@ -17,16 +17,30 @@ def setup_sensormm(url):
     df.rename(columns={'field2': 'Metano', 'field3': 'Monóxido'}, inplace=True)
     return df
 
-sensormm_8_12_Feb = "./Datasetmm/8_12_Feb24.csv"
-sensormm_12_16_Feb = "./Datasetmm/12_16_Feb24.csv"
-sensormm_16_20_Feb = "./Datasetmm/16_20_Feb24.csv"
-sensormm_20_24_Feb = "./Datasetmm/20_24_Feb24.csv"
-sensormm_24_28_Feb = "./Datasetmm/24_28_Feb24.csv"
-sensormm_28_2_Mar = "./Datasetmm/28_2_Mar24.csv"
-sensormm_2_6_Mar = "./Datasetmm/2_6_Mar24.csv"
-sensormm_6_10_Mar = "./Datasetmm/6_10_Mar24.csv"
-sensormm_10_14_Mar = "./Datasetmm/10_14_Mar24.csv"
-sensormm_14_18_Mar = "./Datasetmm/14_18_Mar24.csv"
+sensormm_8_12_Feb = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-08offset=UTC-06:00&end=2024-02-12offset=UTC-06:00"
+sensormm_12_16_Feb = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-12offset=UTC-06:00&end=2024-02-16offset=UTC-06:00"
+sensormm_16_20_Feb = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-16offset=UTC-06:00&end=2024-02-20offset=UTC-06:00"
+sensormm_20_24_Feb = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-20offset=UTC-06:00&end=2024-02-24offset=UTC-06:00"
+sensormm_24_28_Feb = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-24offset=UTC-06:00&end=2024-02-28offset=UTC-06:00"
+sensormm_28_2_Mar = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-02-28offset=UTC-06:00&end=2024-03-02offset=UTC-06:00"
+sensormm_2_6_Mar = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-03-02offset=UTC-06:00&end=2024-03-06offset=UTC-06:00"
+sensormm_6_10_Mar = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-03-06offset=UTC-06:00&end=2024-03-10offset=UTC-06:00"
+sensormm_10_14_Mar = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-03-10offset=UTC-06:00&end=2024-03-14offset=UTC-06:00"
+sensormm_14_18_Mar = "https://api.thingspeak.com/channels/2378137/feeds.csv?start=2024-03-14offset=UTC-06:00&end=2024-03-18offset=UTC-06:00"
+
+
+
+
+#sensormm_8_12_Feb = "./Datasetmm/8_12_Feb24.csv"
+#sensormm_12_16_Feb = "./Datasetmm/12_16_Feb24.csv"
+#sensormm_16_20_Feb = "./Datasetmm/16_20_Feb24.csv"
+#sensormm_20_24_Feb = "./Datasetmm/20_24_Feb24.csv"
+#sensormm_24_28_Feb = "./Datasetmm/24_28_Feb24.csv"
+#sensormm_28_2_Mar = "./Datasetmm/28_2_Mar24.csv"
+#sensormm_2_6_Mar = "./Datasetmm/2_6_Mar24.csv"
+#sensormm_6_10_Mar = "./Datasetmm/6_10_Mar24.csv"
+#sensormm_10_14_Mar = "./Datasetmm/10_14_Mar24.csv"
+#sensormm_14_18_Mar = "./Datasetmm/14_18_Mar24.csv"
 
 datamm_1 = setup_sensormm(sensormm_8_12_Feb)
 datamm_2 = setup_sensormm(sensormm_12_16_Feb)
@@ -64,7 +78,7 @@ app.layout = html.Div([
      html.Div([
           html.Img(src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-TecNM-2017.png',
                  style={'height': '200px', 'width': '300px', 'verticalAlign': 'middle', 'marginRight': '30px'}),
-          html.H1(children='Visualización de variables para SIMAR', style=font_style),
+          html.H1(children='Visualización de variables para SIMAR (simar)', style=font_style),
           ], style={'display': 'flex', 'alignItems': 'center','marginBottom': '20px'}),
           html.P(children='Instituto Tecnológico de Ciudad Guzmán'),
      
