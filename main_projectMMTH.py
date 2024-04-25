@@ -35,6 +35,7 @@ sensorth_2_6_Mar = "./Datasetth/2_6_Mar24.csv"
 sensorth_6_10_Mar = "./Datasetth/6_10_Mar24.csv"
 sensorth_10_14_Mar = "./Datasetth/10_14_Mar24.csv"
 sensorth_14_18_Mar = "./Datasetth/14_18_Mar24.csv"
+sensorth_18_22_Mar = "./Datasetth/18_22_Mar24.csv"
 # NOTE1: Add HERE for more TH data. 
 
 sensormm_8_12_Feb = "./Datasetmm/8_12_Feb24.csv"
@@ -47,6 +48,7 @@ sensormm_2_6_Mar = "./Datasetmm/2_6_Mar24.csv"
 sensormm_6_10_Mar = "./Datasetmm/6_10_Mar24.csv"
 sensormm_10_14_Mar = "./Datasetmm/10_14_Mar24.csv"
 sensormm_14_18_Mar = "./Datasetmm/14_18_Mar24.csv"
+sensormm_18_22_Mar = "./Datasetmm/14_18_Mar24.csv"
 # NOTE2: Add HERE for more MM data. 
 
 datamm_1 = setup_sensormm(sensormm_8_12_Feb)
@@ -59,6 +61,7 @@ datamm_7 = setup_sensormm(sensormm_2_6_Mar)
 datamm_8 = setup_sensormm(sensormm_6_10_Mar)
 datamm_9 = setup_sensormm(sensormm_10_14_Mar)
 datamm_10 = setup_sensormm(sensormm_14_18_Mar)
+datamm_11 = setup_sensormm(sensormm_18_22_Mar)
 
 datath_1 = setup_sensorth(sensorth_8_12_Feb)
 datath_2 = setup_sensorth(sensorth_12_16_Feb)
@@ -70,10 +73,10 @@ datath_7 = setup_sensorth(sensorth_2_6_Mar)
 datath_8 = setup_sensorth(sensorth_6_10_Mar)
 datath_9 = setup_sensorth(sensorth_10_14_Mar)
 datath_10 = setup_sensorth(sensorth_14_18_Mar)
+datath_11 = setup_sensorth(sensorth_18_22_Mar)
 
-
-data_combined_mm = pd.concat([datamm_1, datamm_2, datamm_3, datamm_4, datamm_5, datamm_6, datamm_7, datamm_8, datamm_9, datamm_10])
-data_combined_th = pd.concat([datath_1, datath_2, datath_3, datath_4, datath_5, datath_6, datath_7, datath_8, datath_9, datath_10])
+data_combined_mm = pd.concat([datamm_1, datamm_2, datamm_3, datamm_4, datamm_5, datamm_6, datamm_7, datamm_8, datamm_9, datamm_10, datamm_11])
+data_combined_th = pd.concat([datath_1, datath_2, datath_3, datath_4, datath_5, datath_6, datath_7, datath_8, datath_9, datath_10, datath_11])
 # NOTE3: Add data name files. 
 
 
@@ -106,7 +109,7 @@ app.layout = html.Div([
      html.Div([
           html.Img(src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-TecNM-2017.png',
                  style={'height': '200px', 'width': '300px', 'verticalAlign': 'middle', 'marginRight': '80px'}),
-          html.H1(children='Monitoreo de variables ambientales', style=font_style),
+          html.H1(children='CYNTHIA de variables ambientales', style=font_style),
           ], style={'display': 'flex', 'alignItems': 'center','marginBottom': '30px'}),
           html.P(children='Instituto Tecnológico de Ciudad Guzmán', style={'fontSize': '25px', 'fontWeight': 'bold'}),
      html.Br(),  
