@@ -48,7 +48,7 @@ sensormm_2_6_Mar = "./Datasetmm/2_6_Mar24.csv"
 sensormm_6_10_Mar = "./Datasetmm/6_10_Mar24.csv"
 sensormm_10_14_Mar = "./Datasetmm/10_14_Mar24.csv"
 sensormm_14_18_Mar = "./Datasetmm/14_18_Mar24.csv"
-sensormm_18_22_Mar = "./Datasetmm/14_18_Mar24.csv"
+sensormm_18_22_Mar = "./Datasetmm/18_22_Mar24.csv"
 # NOTE2: Add HERE for more MM data. 
 
 datamm_1 = setup_sensormm(sensormm_8_12_Feb)
@@ -109,7 +109,7 @@ app.layout = html.Div([
      html.Div([
           html.Img(src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-TecNM-2017.png',
                  style={'height': '200px', 'width': '300px', 'verticalAlign': 'middle', 'marginRight': '80px'}),
-          html.H1(children='CYNTHIA de variables ambientales', style=font_style),
+          html.H1(children='Monitoreo de variables ambientales', style=font_style),
           ], style={'display': 'flex', 'alignItems': 'center','marginBottom': '30px'}),
           html.P(children='Instituto Tecnológico de Ciudad Guzmán', style={'fontSize': '25px', 'fontWeight': 'bold'}),
      html.Br(),  
